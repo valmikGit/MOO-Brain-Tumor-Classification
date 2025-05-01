@@ -37,14 +37,14 @@ Due to licensing, the dataset is not included in this repository. Please downloa
 1. Clone the repository:
    ```bash
    git clone https://github.com/valmikGit/MOO-Brain-Tumor-Classification.git
-   cd MOO-Brain-Tumor-Classification```
+   cd MOO-Brain-Tumor-Classification
 2. Create a virtual environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate```
+   source venv/bin/activate
 3. Install the dependencies:
    ```bash
-   pip install -r requirements.txt```
+   pip install -r requirements.txt
 4. Run the model
    ```bash
-   python3 valmik_attemp7.py```
+   python3 valmik_attemp7.py
