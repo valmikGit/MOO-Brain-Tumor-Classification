@@ -9,19 +9,6 @@ This repository implements a **Multi-Objective Optimization (MOO)**-based approa
 - Evaluates models based on multiple criteria: accuracy, precision, recall, F1-score, and AUC.
 - Applicable for medical image analysis and diagnostic support systems.
 
-## Project Sructure
-MOO-Brain-Tumor-Classification/
-│
-├── data/                         # Dataset directory (not included)
-├── models/                       # Saved models and architecture files
-├── notebooks/                    # Jupyter notebooks for experimentation
-├── results/                      # Evaluation results, plots, and logs
-├── utils/                        # Helper functions and scripts
-├── requirements.txt              # Python dependencies
-├── train.py                      # Script to train the model
-├── evaluate.py                   # Script to evaluate model performance
-└── README.md                     # This file
-
 ## Dataset
 
 This project uses the **Brain MRI Images for Brain Tumor Detection** dataset, available from public sources like Kaggle. The dataset includes labeled MRI scans categorized into:
