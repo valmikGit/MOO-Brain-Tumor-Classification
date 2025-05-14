@@ -135,7 +135,7 @@ graph TD
 - **Precision and Recall:**
 - `P = TP / (TP + FP)`
 
-$$
+- $$
 R = \frac{TP}{TP + FN} \quad \text{(Recall)}
 $$
 
