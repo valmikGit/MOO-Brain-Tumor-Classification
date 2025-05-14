@@ -1,37 +1,19 @@
-# MOO-Brain-Tumor-Classification
-Multi objective optimization for brain tumor classification
+# Multi-Objective Neural Architecture Search with Pareto Frontier Analysis
 
-This repository implements a **Multi-Objective Optimization (MOO)**-based approach for **Brain Tumor Classification** using deep learning techniques. The goal is to classify brain tumor MRI scans into different tumor types efficiently while balancing multiple objectives such as accuracy, sensitivity, specificity, and model complexity.
+![Pareto Frontier Visualization](pareto_frontier.png)
 
-## Project Highlights
+## Overview
+This framework performs neural architecture search with multi-objective optimization using Optuna, focusing on three key metrics: precision, recall, and class distribution bias. The system explores different weight combinations for these objectives and identifies Pareto-optimal solutions.
 
-- Leverages Multi-Objective Optimization to improve classification robustness.
-- Evaluates models based on multiple criteria: accuracy, precision, recall, F1-score, and AUC.
-- Applicable for medical image analysis and diagnostic support systems.
+## Table of Contents
+1. [Dataset Preparation](#dataset)
+2. [Model Architecture](#architecture)
+3. [Mathematical Formulation](#math)
+4. [Hyperparameter Optimization](#optimization)
+5. [Metrics Calculation](#metrics)
+6. [Pareto Frontier Analysis](#pareto)
+7. [Usage Instructions](#usage)
+8. [Results Interpretation](#results)
 
-## Dataset
-
-This project uses the **Brain MRI Images for Brain Tumor Detection** dataset, available from public sources like Kaggle. The dataset includes labeled MRI scans categorized into:
-
-- **Glioma**
-- **Meningioma**
-- **Pituitary**
-- **No Tumor**
-
-Due to licensing, the dataset is not included in this repository. Please download it separately and place it in the `data/` directory.
-
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/valmikGit/MOO-Brain-Tumor-Classification.git
-   cd MOO-Brain-Tumor-Classification
-2. Create a virtual environment:
-   ```bash
-   python -m venv venv
-   source venv/bin/activate
-3. Install the dependencies:
-   ```bash
-   pip install -r requirements.txt
-4. Run the model
-   ```bash
-   python3 valmik_attemp7.py
+## Dataset Preparation
+- **Directory Structure**:
