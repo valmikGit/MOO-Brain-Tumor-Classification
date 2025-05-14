@@ -176,3 +176,23 @@ def calculate_metrics(y_true, y_pred, num_classes):
     bias = np.std(class_counts) / (np.mean(class_counts) + 1e-6)
     
     return precision, recall, bias
+```
+
+## Pareto Frontier Analysis:
+A solution **x** belongs to the Pareto frontier if:
+- **No Dominance**: No other solution is better in all objectives.  
+- **Non-Dominated**: For all other solutions **x'**, at least one objective is worse.
+
+$$
+\text{x is Pareto optimal if } \nexists\, \text{x'} \text{ such that:}
+$$
+
+$$
+\begin{cases}
+P(\text{x'}) \geq P(\text{x}) \\
+R(\text{x'}) \geq R(\text{x}) \\
+B(\text{x'}) \leq B(\text{x})
+\end{cases}
+$$
+
+with **strict inequality** in at least one objective.
