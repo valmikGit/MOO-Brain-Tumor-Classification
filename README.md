@@ -133,9 +133,9 @@ graph TD
 
 ## Metrics Calculation:
 - **Precision and Recall:**
-- `P = TP / (TP + FP)`
+`P = TP / (TP + FP)`
 
-- $$
+$$
 R = \frac{TP}{TP + FN} \quad \text{(Recall)}
 $$
 
