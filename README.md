@@ -1,7 +1,5 @@
 # Multi-Objective Neural Architecture Search with Pareto Frontier Analysis
 
-![Pareto Frontier Visualization](pareto_frontier.png)
-
 ## Overview
 This framework performs neural architecture search with multi-objective optimization using Optuna, focusing on three key metrics: precision, recall, and class distribution bias. The system explores different weight combinations for these objectives and identifies Pareto-optimal solutions.
 
