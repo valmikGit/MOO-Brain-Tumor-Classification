@@ -7,7 +7,7 @@ This framework performs neural architecture search with multi-objective optimiza
 1. [Dataset Preparation](#dataset-preparation)
 2. [Model Architecture](#model-architecture)
 3. [Mathematical Formulation](#mathematical-formulation)
-4. [Hyperparameter Optimization](#hyperparameter-optimization-process)
+4. [Hyperparameter Optimization Process](#hyperparameter-optimization-process)
 5. [Metrics Calculation](#metrics-calculation)
 6. [Pareto Frontier Analysis](#pareto-frontier-analysis)
 7. [Usage Instructions](#usage-instructions)
