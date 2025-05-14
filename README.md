@@ -197,6 +197,32 @@ $$
 
 with **strict inequality** in at least one objective.
 
+## Usage Instructions:
+- Virtual environment creation:
+```bash
+python -m venv mooenv
+```
+- Activate the virtual environment:
+For Windows:
+```bash
+.\mooenv\Scripts\activate
+```
+For Linux:
+```bash
+source mooenv/bin/activate
+```
+
+- Dependencies:
+```bash
+pip install -r requirements.txt
+```
+- Run the Jupyter notebook (attempt 7) after selecting the mooenv as the kernel.
+
+### Output files:
+- full_pareto_results.csv: All completed trials
+- full_pareto_front.csv: Pareto-optimal solutions
+- Interactive 3D visualization of Pareto frontier
+
 ## Results Interpretation:
 ### CSV Columns:
 
