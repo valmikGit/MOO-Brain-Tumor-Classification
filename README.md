@@ -15,3 +15,21 @@ This framework performs neural architecture search with multi-objective optimiza
 
 ## Dataset Preparation
 - **Directory Structure**:
+```bash
+2/
+├── Training/
+│   ├── class0/
+│   │   ├── image001.jpg
+│   │   ├── image002.jpg
+│   │   └── ...
+│   └── class1/
+│       ├── image101.jpg
+│       ├── image102.jpg
+│       └── ...
+└── Testing/
+    ├── class0/
+    │   ├── test001.jpg
+    │   └── ...
+    └── class1/
+        ├── test101.jpg
+        └── ...
