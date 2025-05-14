@@ -130,3 +130,53 @@ graph TD
     H --> D
     I --> J[Return Best Score]
 ```
+
+## Metrics Calculation:
+- **Precision and Recall:**
+$$
+P = \frac{TP}{TP + FP} \quad \text{(Precision)}
+$$
+
+$$
+R = \frac{TP}{TP + FN} \quad \text{(Recall)}
+$$
+
+  - Calculated per-class then averaged (macro-avg)
+  - Handles class imbalance by weighting all classes equally
+  - $TP$ = True Positives, $FP$ = False Positives, $FN$ = False Negatives
+
+- **Class Bias Metric:**
+
+$$
+B = \frac{\sigma(\text{class\_counts})}{\mu(\text{class\_counts}) + \epsilon}
+$$
+
+Where:
+- $\sigma$ = standard deviation of class sample counts
+- $\mu$ = mean of class sample counts
+- $\epsilon = 10^{-6}$ (small constant for numerical stability)
+
+- **Interpretation:**
+| Bias Value | Interpretation |
+|------------|----------------|
+| $B \approx 0$ | Perfectly balanced classes |
+| $B > 0.5$ | Significant imbalance |
+| $B > 1.0$ | Extreme imbalance |
+
+- **Implementation Code:**
+
+```python
+from sklearn.metrics import precision_score, recall_score
+import numpy as np
+
+def calculate_metrics(y_true, y_pred, num_classes):
+    # Macro-averaged precision/recall
+    precision = precision_score(y_true, y_pred, average='macro', zero_division=0)
+    recall = recall_score(y_true, y_pred, average='macro', zero_division=0)
+    
+    # Class bias calculation
+    cm = confusion_matrix(y_true, y_pred, labels=range(num_classes))
+    class_counts = cm.sum(axis=0)
+    bias = np.std(class_counts) / (np.mean(class_counts) + 1e-6)
+    
+    return precision, recall, bias
