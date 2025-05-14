@@ -46,7 +46,7 @@ transforms.ToTensor()
   - Batch size: 16
   - Automatic CUDA acceleration
 
-## Model Architecture: Custom ResNet
+## Model Architecture:
 ```python
 class CustomResNet(nn.Module):
     def __init__(self, n_layers, width, dropout_rate, num_classes):
