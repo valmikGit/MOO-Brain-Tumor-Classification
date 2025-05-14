@@ -207,27 +207,27 @@ with **strict inequality** in at least one objective.
 - **precision/recall**: Macro-averaged metrics
 - **bias**: Class distribution imbalance
 
-## Visualization:
+### Visualization:
 - X-axis: Precision
 - Y-axis: Recall
 - Z-axis: Bias
 - Red points: Pareto-optimal solutions
 - Gray points: All trials
 
-## Early Stopping Mechanism
+### Early Stopping Mechanism
 - Patience: 2 epochs
 - Max Epochs: 3 during search, 5 for final training
 
-## Memory Management
+### Memory Management
 - Automatic CUDA cache clearing after each trial
 - Garbage collection enforcement
 - Model/optimizer deletion after evaluation
 
-## Customization Points
+### Customization Points
 - Adjust steps_25 and steps_20 for different weight resolutions
 - Modify n_layers and width ranges in objective function
 - Tune batch size and image resolution
 - Adjust early stopping patience
 
-## Conclusion
+### Conclusion
 - This framework enables systematic exploration of the trade-off space between model accuracy metrics and class balance. The Pareto frontier visualization helps identify optimal architectures for different application requirements where precision, recall, and fairness might have varying priorities.
