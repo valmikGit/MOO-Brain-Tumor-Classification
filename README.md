@@ -115,3 +115,18 @@ weight_str = trial.suggest_categorical('weights', [
     # ... all valid combinations
 ])
 ```
+
+## Optimization process:
+```mermaid
+graph TD
+    A[Start Trial] --> B[Sample Parameters]
+    B --> C[Build CustomResNet]
+    C --> D[Train for 3 Epochs]
+    D --> E[Validate]
+    E --> F[Calculate Score]
+    F --> G{Improved?}
+    G -- Yes --> H[Continue]
+    G -- No --> I[Early Stopping]
+    H --> D
+    I --> J[Return Best Score]
+```
