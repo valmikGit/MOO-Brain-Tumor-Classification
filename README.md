@@ -147,9 +147,7 @@ $$
 
 - **Class Bias Metric:**
 
-$$
-B = \frac{\sigma(\text{class\_counts})}{\mu(\text{class\_counts}) + \epsilon}
-$$
+`B = σ(class_counts) / (μ(class_counts) + ε)`
 
 Where:
 - $\sigma$ = standard deviation of class sample counts
