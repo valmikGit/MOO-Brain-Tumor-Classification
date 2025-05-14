@@ -33,3 +33,15 @@ This framework performs neural architecture search with multi-objective optimiza
     └── class1/
         ├── test101.jpg
         └── ...
+```
+
+- **Transforms**:
+```python
+transforms.Resize((128, 128))
+transforms.ToTensor()
+```
+
+- **Data Loading**:
+  - 80-20 train-validation split
+  - Batch size: 16
+  - Automatic CUDA acceleration
