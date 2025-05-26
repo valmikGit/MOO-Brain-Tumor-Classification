@@ -13,6 +13,7 @@ This framework performs neural architecture search with multi-objective optimiza
 7. [Usage Instructions](#usage-instructions)
 8. [Results Interpretation](#results-interpretation)
 9. [Link to the Dataset](#dataset)
+10. [Link to the report](#project-report)
 
 ## Dataset Preparation
 - **Directory Structure**:
@@ -260,4 +261,7 @@ pip install -r requirements.txt
 - This framework enables systematic exploration of the trade-off space between model accuracy metrics and class balance. The Pareto frontier visualization helps identify optimal architectures for different application requirements where precision, recall, and fairness might have varying priorities.
 
 ## Dataset:
-- The link to the dataset, which we had used for this project, is: https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri/data 
+- The link to the dataset, which we had used for this project, is: https://www.kaggle.com/datasets/sartajbhuvaji/brain-tumor-classification-mri/data
+
+## Project Report:
+- The link to our project report: https://www.overleaf.com/read/rxzrhgvjhjfz#345060
