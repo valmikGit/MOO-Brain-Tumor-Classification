@@ -4,7 +4,7 @@
 This framework performs neural architecture search with multi-objective optimization using Optuna, focusing on three key metrics: precision, recall, and class distribution bias. The system explores different weight combinations for these objectives and identifies Pareto-optimal solutions.
 
 ## Table of Contents
-1. [Dataset Preparation](#dataset-preparation)
+1. [Dataset Preparation](#dataset-preparation) 
 2. [Model Architecture](#model-architecture)
 3. [Mathematical Formulation](#mathematical-formulation)
 4. [Hyperparameter Optimization Process](#hyperparameter-optimization-process)
